@@ -38,7 +38,7 @@ npm install
 npm run dev
 ```
 
-開啟 http://127.0.0.1:5173。正式建置：`npm run build`；預覽：`npm run preview`；物理測試：`npm test`。
+開啟 [本機工作台](http://127.0.0.1:5173/)。正式建置：`npm run build`；預覽：`npm run preview`；物理測試：`npm test`。
 
 ## 線上版本與部署
 
