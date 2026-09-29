@@ -1,0 +1,11 @@
+export type Subsystem = 'exterior' | 'body' | 'powertrain' | 'chassis' | 'interior' | 'adas';
+export type Mode = 'showroom' | 'xray' | 'exploded' | 'aero' | 'thermal' | 'energy';
+export type ViewPreset = 'perspective' | 'front' | 'side' | 'top' | 'cockpit' | 'battery' | 'chassis';
+export type DoorId = 'frontLeft' | 'frontRight' | 'rearLeft' | 'rearRight' | 'frunk' | 'trunk' | 'charge';
+export interface Part { id: string; name: string; english: string; code: string; system: Subsystem; material: string; description: string; specs: { label: string; value: string }[]; provenance: 'official' | 'illustrative'; }
+export interface SystemInfo { id: Subsystem; name: string; english: string; color: string; }
+export interface SimulationState { mode: Mode; selected: string | null; isolated: string | null; visible: Record<Subsystem, boolean>; paint: string; opacity: number; explosion: number; steering: number; throttle: number; brake: number; road: number; running: boolean; doors: Record<DoorId, boolean>; view: ViewPreset; viewNonce: number; resetNonce: number; dimensions: boolean; autoRotate: boolean; thermalMode: 'cooling' | 'heating'; }
+export interface Telemetry { speed: number; rpm: number; power: number; battery: number; temperature: number; fps: number; drawCalls: number; triangles: number; partCount: number; }
+export interface SceneProps { state: SimulationState; onSelect: (id: string | null) => void; onTelemetry: (data: Telemetry) => void; onSteering?: (angle: number) => void; onReady?: () => void; }
+export const INITIAL_STATE: SimulationState = { mode: 'showroom', selected: null, isolated: null, visible: { exterior: true, body: true, powertrain: true, chassis: true, interior: true, adas: true }, paint: '#e4e8ef', opacity: 0.17, explosion: 0.65, steering: 0, throttle: 0, brake: 0, road: 0, running: false, doors: { frontLeft: false, frontRight: false, rearLeft: false, rearRight: false, frunk: false, trunk: false, charge: false }, view: 'perspective', viewNonce: 0, resetNonce: 0, dimensions: false, autoRotate: false, thermalMode: 'cooling' };
+export const INITIAL_TELEMETRY: Telemetry = { speed: 0, rpm: 0, power: 0, battery: 82, temperature: 24, fps: 0, drawCalls: 0, triangles: 0, partCount: 0 };
