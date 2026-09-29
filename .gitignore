@@ -7,4 +7,4 @@ playwright-report/
 .env
 .env.*
 !.env.example
-/{if(o
+/[{]if(o

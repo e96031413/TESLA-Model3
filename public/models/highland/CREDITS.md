@@ -6,11 +6,13 @@ This application uses an independently authored 3D model, not Tesla CAD.
 - Embedded author: [RBLXSupercars](https://sketchfab.com/RBLXSupercars).
 - Download-page uploader: [brandonleong28](https://sketchfab.com/3d-models/tesla-model-3-2024-36c52f3f89f6439c90310f14e8ff33f2).
 - Embedded original source: [2024 Tesla Model 3](https://sketchfab.com/3d-models/2024-tesla-model-3-fd22be415215453693d67e33aa7812d0).
-- License: [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/).
+- Model asset license: [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/); [full license text](LICENSE-CC-BY-4.0.txt).
 - Retrieved from the [Carbon-Footprint-AI-Visualizer mirror, commit af4bef33ca371b24c1f043486f09a13571f4919b](https://github.com/erictfree/Carbon-Footprint-AI-Visualizer/blob/af4bef33ca371b24c1f043486f09a13571f4919b/models/tesla-model-3-2024/source/2024_tesla_model_3.glb).
 - Original file SHA-256: `6ef6933d93ee0812d4049446a38e9b46273cab03b21be1e2ef1d502eccdb684b`.
 
 The mirror credits both the embedded author and the current download-page uploader; both are retained here. The mirror reports that the embedded original source URL was unavailable when it incorporated the model.
+
+This CC BY 4.0 license applies to `source.glb`, the adapted `highland.glb`, and the six textures embedded in each GLB. It is the model asset's license; the project's code license does not replace it. Keep this attribution, the license link, and the description of changes when sharing the model or images of it.
 
 ## Changes made for this application
 
